@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mylenna Duarte | Dados, Automação & Soluções Tecnológicas</title>
+  <meta name="description" content="Mylenna Duarte — Analista de Dados e Automação. Power BI, SQL, Python e Power Platform. Tecnologia que transforma, soluções que conectam." />
+  <meta property="og:title" content="Mylenna Duarte | Soluções Tecnológicas" />
+  <meta property="og:description" content="Dados, automação e sistemas com propósito. Projetos que já economizam mais de 200 horas por mês." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <!-- Pré-visualização de link: quando o domínio for definido, troque por um endereço absoluto (https://seu-dominio/img/og-image.png). -->
+  <meta property="og:image" content="img/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Mylenna, Soluções Tecnológicas: automação, dados e sistemas para o seu negócio, com orçamento pelo WhatsApp." />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.ico" sizes="48x48" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="img/favicon-192.png" />
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Fundo animado -->
+  <canvas id="particles"></canvas>
+  <div class="circuit circuit--tl" aria-hidden="true"></div>
+  <div class="circuit circuit--br" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Barra de progresso de scroll -->
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__signature">Mylenna</span>
+        <span class="logo__heart">♡</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#inicio" class="nav__link active">Início</a>
+        <a href="#sobre" class="nav__link">Sobre</a>
+        <a href="#servicos" class="nav__link">Serviços</a>
+        <a href="#habilidades" class="nav__link">Ferramentas</a>
+        <a href="#projetos" class="nav__link">Projetos</a>
+        <a href="#depoimentos" class="nav__link">Depoimentos</a>
+        <a href="#contato" class="nav__link">Contato</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__tag"><span class="dot"></span> Orçamento por projeto, direto no WhatsApp</span>
+
+          <h1 class="hero__title">
+            <span class="hero__title-small">Soluções</span>
+            <span class="hero__title-big">Tecnológicas</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Tecnologia que <strong>transforma</strong>. Soluções que <strong>conectam</strong>.
+          </p>
+
+          <p class="hero__typing">
+            Eu sou <span class="hero__name">Mylenna Duarte</span>, <span id="typed"></span><span class="caret">|</span>
+          </p>
+
+          <div class="hero__badges">
+            <span class="badge"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+            <span class="badge"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="badge"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="badge"><i class="fa-solid fa-robot"></i> Power Platform</span>
+            <span class="badge"><i class="fa-solid fa-gears"></i> RPA</span>
+          </div>
+
+          <div class="hero__cta">
+            <a href="https://wa.me/5521971164026?text=Ol%C3%A1%20Mylenna!%20Vi%20seu%20site%20e%20quero%20um%20or%C3%A7amento." target="_blank" rel="noopener" class="btn btn--primary">
+              <i class="fa-brands fa-whatsapp"></i> Pedir orçamento
+            </a>
+            <a href="#projetos" class="btn btn--ghost"><i class="fa-solid fa-rocket"></i> Ver projetos</a>
+          </div>
+
+          <div class="hero__social">
+            <a href="https://www.linkedin.com/in/mylenna/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:mysilvaduarte@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="orbit orbit--1"></div>
+          <div class="orbit orbit--2"></div>
+          <div class="hero__photo-frame">
+            <img src="img/foto.webp" width="700" height="933" alt="Mylenna Duarte" class="hero__photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+            <div class="hero__photo-fallback">M</div>
+          </div>
+          <div class="hero__signature">
+            <span>Mylenna</span><small>♡</small>
+          </div>
+          <p class="hero__motto">Tecnologia com propósito.<br />Soluções que fazem a diferença.</p>
+
+          <div class="float-icon float-icon--1"><i class="fa-solid fa-laptop"></i></div>
+          <div class="float-icon float-icon--2"><i class="fa-solid fa-gear"></i></div>
+          <div class="float-icon float-icon--3"><i class="fa-solid fa-cloud"></i></div>
+          <div class="float-icon float-icon--4"><i class="fa-solid fa-shield-halved"></i></div>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// sobre mim</span>
+          <h2 class="section__title">Quem é a <span class="grad">Mylenna</span>?</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__text reveal">
+            <p>
+              Sou <strong>Analista de Dados e Automação</strong>, com cerca de 2 anos de experiência em
+              análise, tratamento e automação de dados no setor logístico. Uso
+              <strong>Power BI, SQL, Python, Power Query, DAX e Power Platform</strong> para transformar
+              planilhas e rotinas manuais em dashboards, KPIs, relatórios e sistemas integrados.
+            </p>
+            <p>
+              Hoje sou a principal responsável por soluções de dados e automação para as áreas de RH, CCO,
+              QSMS e TI de uma empresa de logística — projetos que já geram <em>mais de 200 horas por mês</em>
+              de economia operacional. Para o seu negócio, faço o mesmo: entendo o processo, automatizo o
+              que é repetitivo e entrego o resultado medido. E, claro, com o meu jeito: profissional, criativo
+              e com um toque de rosa. 💗
+            </p>
+
+            <ul class="about__list">
+              <li><i class="fa-solid fa-lightbulb"></i> Ideias</li>
+              <li><i class="fa-solid fa-list-check"></i> Planos</li>
+              <li><i class="fa-solid fa-puzzle-piece"></i> Soluções</li>
+              <li><i class="fa-solid fa-chart-line"></i> Resultados</li>
+            </ul>
+
+            <a href="#contato" class="btn btn--primary">Vamos conversar <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+
+          <div class="about__cards">
+            <div class="info-card reveal">
+              <div class="info-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <span class="info-card__label">Localização</span>
+                <strong>Rio de Janeiro, RJ</strong>
+              </div>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-card__icon"><i class="fa-solid fa-file-signature"></i></div>
+              <div>
+                <span class="info-card__label">Contratação</span>
+                <strong>Orçamento por projeto</strong>
+              </div>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-card__icon"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <span class="info-card__label">Atuação</span>
+                <strong>Dados &amp; automação para RH, CCO, QSMS e TI</strong>
+              </div>
+            </div>
+            <div class="info-card reveal">
+              <div class="info-card__icon"><i class="fa-solid fa-language"></i></div>
+              <div>
+                <span class="info-card__label">Idiomas</span>
+                <strong>Português nativo · Inglês e espanhol básicos</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><span class="stat__num" data-count="200">0</span><span class="stat__plus">+</span><span class="stat__label">Horas/mês economizadas</span></div>
+          <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__plus">+</span><span class="stat__label">Projetos de dados &amp; automação</span></div>
+          <div class="stat"><span class="stat__num" data-count="4">0</span><span class="stat__plus"></span><span class="stat__label">Áreas atendidas (RH, CCO, QSMS, TI)</span></div>
+          <div class="stat"><span class="stat__pre">até</span><span class="stat__num" data-count="99">0</span><span class="stat__plus">%</span><span class="stat__label">Ganho de produtividade por automação</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// o que eu faço</span>
+          <h2 class="section__title">Meus <span class="grad">serviços</span></h2>
+          <p class="section__desc">Da ideia ao resultado: soluções completas, pensadas para o seu negócio.</p>
+        </div>
+
+        <div class="services">
+          <article class="service reveal">
+            <div class="hex"><i class="fa-solid fa-gears"></i></div>
+            <h3>Automação &amp; RPA</h3>
+            <p>Processos mais inteligentes, resultados mais eficientes. Rotinas com Power Automate, Python e VBA que eliminam trabalho manual.</p>
+            <span class="service__line"></span>
+          </article>
+
+          <article class="service reveal">
+            <div class="hex"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Dados &amp; BI</h3>
+            <p>Dashboards, KPIs e relatórios em Power BI com SQL, Power Query e DAX para transformar dados em decisões.</p>
+            <span class="service__line"></span>
+          </article>
+
+          <article class="service reveal">
+            <div class="hex"><i class="fa-solid fa-code"></i></div>
+            <h3>Sistemas &amp; Integrações</h3>
+            <p>Soluções completas e personalizadas: Power Apps, Dataverse, APIs e integrações entre sistemas do seu negócio.</p>
+            <span class="service__line"></span>
+          </article>
+
+          <article class="service reveal">
+            <div class="hex"><i class="fa-solid fa-headset"></i></div>
+            <h3>Suporte Técnico</h3>
+            <p>Atendimento ágil e especializado quando você mais precisa: sistemas corporativos, bases de dados e Office 365.</p>
+            <span class="service__line"></span>
+          </article>
+
+          <article class="service reveal">
+            <div class="hex"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>Design com Computador</h3>
+            <p>Design moderno, criativo e funcional que comunica e conecta: artes, apresentações e materiais digitais para o seu negócio.</p>
+            <span class="service__line"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMO FUNCIONA ===== -->
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// como funciona</span>
+          <h2 class="section__title">Do problema à <span class="grad">solução</span></h2>
+          <p class="section__desc">O mesmo caminho que sigo nos projetos que já estão em produção.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="hex hex--sm"><i class="fa-brands fa-whatsapp"></i></div>
+            <span class="step__num" aria-hidden="true">1</span>
+            <div>
+              <h3>Conversa</h3>
+              <p>Você me conta pelo WhatsApp o que toma tempo da sua equipe ou o que precisa enxergar nos números.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="hex hex--sm"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <span class="step__num" aria-hidden="true">2</span>
+            <div>
+              <h3>Levantamento</h3>
+              <p>Mapeio o processo e as regras de negócio com quem executa, para achar onde está o gargalo.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="hex hex--sm"><i class="fa-solid fa-file-signature"></i></div>
+            <span class="step__num" aria-hidden="true">3</span>
+            <div>
+              <h3>Orçamento</h3>
+              <p>Com o escopo claro, envio a proposta. Não há pacote fechado: o orçamento é feito para a sua necessidade.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="hex hex--sm"><i class="fa-solid fa-code"></i></div>
+            <span class="step__num" aria-hidden="true">4</span>
+            <div>
+              <h3>Desenvolvimento</h3>
+              <p>Construo a automação, a base ou o painel e testo tudo antes de liberar.</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="hex hex--sm"><i class="fa-solid fa-flag-checkered"></i></div>
+            <span class="step__num" aria-hidden="true">5</span>
+            <div>
+              <h3>Entrega</h3>
+              <p>Implanto a solução e deixo tudo documentado para a sua equipe usar no dia a dia.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section class="section section--alt" id="habilidades">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// stack</span>
+          <h2 class="section__title">Minhas <span class="grad">ferramentas</span></h2>
+          <p class="section__desc">O que uso para construir cada solução, da automação ao dashboard.</p>
+        </div>
+
+        <div class="skills-grid">
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-chart-column"></i> Dados &amp; BI</h3>
+              <div class="chips">
+                <span class="chip">Power BI</span><span class="chip">Power Query (M)</span><span class="chip">DAX</span>
+                <span class="chip">Excel / VBA</span><span class="chip">KPIs</span><span class="chip">Análise exploratória</span><span class="chip">ETL</span>
+                <span class="chip">Modelagem de dados</span><span class="chip">Qualidade de dados</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-database"></i> Banco de dados</h3>
+              <div class="chips">
+                <span class="chip">SQL</span><span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+                <span class="chip">Dataverse</span><span class="chip">Modelagem relacional</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-robot"></i> RPA &amp; Automação</h3>
+              <div class="chips">
+                <span class="chip">Power Automate Cloud</span><span class="chip">Power Automate Desktop</span>
+                <span class="chip">Power Apps</span><span class="chip">Power Platform</span><span class="chip">VBA</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-code"></i> Programação &amp; Web</h3>
+              <div class="chips">
+                <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Git / GitHub</span>
+                <span class="chip">REST APIs</span><span class="chip">Front-end</span><span class="chip">Integrações</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-brain"></i> Estatística, Big Data &amp; IA</h3>
+              <div class="chips">
+                <span class="chip">Estatística descritiva</span><span class="chip">Outliers (IQR/Tukey)</span>
+                <span class="chip">Big Data</span><span class="chip">Copilot Agent Builder</span><span class="chip">Claude</span>
+              </div>
+            </div>
+            <div class="skill-group reveal">
+              <h3><i class="fa-solid fa-cloud"></i> Sistemas &amp; Plataformas</h3>
+              <div class="chips">
+                <span class="chip">Azure</span><span class="chip">Sydle</span><span class="chip">Office 365</span>
+                <span class="chip">Teams</span><span class="chip">SharePoint</span><span class="chip">OneDrive</span>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// portfólio</span>
+          <h2 class="section__title">Projetos em <span class="grad">destaque</span></h2>
+          <p class="section__desc">Soluções reais, com resultados medidos em horas economizadas e produtividade.</p>
+        </div>
+
+        <div class="filters reveal">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="automacao">Automação</button>
+          <button class="filter" data-filter="dados">Dados &amp; BI</button>
+          <button class="filter" data-filter="python">Python</button>
+        </div>
+
+        <div class="projects">
+          <article class="project reveal" data-cat="automacao">
+            <a class="project__thumb project__thumb--shot" href="img/paineis/comprovantes-1.webp" data-lightbox="comprovantes" data-caption="Captação de comprovantes · Página 1 de 2: tela inicial do aplicativo">
+              <img src="img/paineis/comprovantes-1.webp" width="1019" height="572" loading="lazy" alt="Tela inicial do aplicativo Separação de Comprovantes: três etapas de preparação, botão de executar a separação, tabela das últimas execuções por competência e os cartões da última execução, com 115 comprovantes lidos e nenhum não localizado. Dados de demonstração." />
+              <span class="project__cat">Automação</span>
+              <span class="project__pages"><i class="fa-regular fa-images"></i> 2 telas · ampliar</span>
+            </a>
+            <a hidden href="img/paineis/comprovantes-2.webp" data-lightbox="comprovantes" data-caption="Captação de comprovantes · Página 2 de 2: extração por identificador" data-alt="Janela Extrair por identificador do aplicativo: campo para informar um identificador por linha, com o aviso de que a automação localiza e separa apenas os comprovantes correspondentes e de que o usuário recebe uma notificação ao final. Dados de demonstração."></a>
+            <div class="project__body">
+              <h3>Captação de comprovantes de pagamento</h3>
+              <p>Leitura e tratamento de mais de 2.000 comprovantes por mês, cruzamento com eventos de pagamento e classificação automática dos arquivos por colaborador, cliente e evento. Quem usa só importa os arquivos e acompanha o resultado pelo aplicativo.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> 81,46 h/mês economizadas · +99,39% produtividade</div>
+              <div class="project__tags"><span>Power Apps</span><span>Power Automate</span><span>Power Query</span><span>SharePoint</span><span>VBA</span></div>
+              <div class="project__links">
+                <a class="link" href="https://github.com/MylennaDuarte/Automacao-Comprovantes-Pagamento" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="automacao">
+            <div class="project__thumb">
+              <i class="fa-solid fa-clipboard-check"></i>
+              <span class="project__cat">Automação</span>
+            </div>
+            <div class="project__body">
+              <h3>Digitalização dos indicadores DBO (DTO e TE)</h3>
+              <p>Plataforma corporativa na Power Platform que substituiu formulários estáticos e processamento manual em Excel/Access e Google Forms, com rastreabilidade total.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> Processo legado 100% digitalizado</div>
+              <div class="project__tags"><span>Power Automate</span><span>Power Apps</span><span>Dataverse</span><span>Power BI</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="dados">
+            <a class="project__thumb project__thumb--shot" href="img/paineis/acoes-1.webp" data-lightbox="acoes" data-caption="Relatório de ações e planos · Página 1 de 2: visão por unidade">
+              <img src="img/paineis/acoes-1.webp" width="1280" height="714" loading="lazy" alt="Painel Power BI de ações e planos: total de ações, quantidade por status encerrado, vencido e no prazo, total por unidade, status das ações por unidade e ações por responsável. Nomes anonimizados." />
+              <span class="project__cat">Dados &amp; BI</span>
+              <span class="project__pages"><i class="fa-regular fa-images"></i> 2 telas · ampliar</span>
+            </a>
+            <a hidden href="img/paineis/acoes-2.webp" data-lightbox="acoes" data-caption="Relatório de ações e planos · Página 2 de 2: detalhamento por cliente" data-alt="Painel Power BI de ações e planos com filtros por unidade, detalhamento, status e responsável: ações por responsável, quantidade por status e status das ações por cliente. Nomes anonimizados."></a>
+            <div class="project__body">
+              <h3>Relatório Power BI — Ações e planos</h3>
+              <p>Relatório para a área de segurança do trabalho com monitoramento de planos de ação e indicadores. A extração e a atualização da base foram automatizadas com Power Automate, substituindo controles e cálculos manuais.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> 11 h/mês economizadas · +94% produtividade</div>
+              <div class="project__tags"><span>Power BI</span><span>Power Automate</span></div>
+              <div class="project__links">
+                <a class="link" href="https://github.com/MylennaDuarte/Relatorio-Acoes-e-planos" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="dados">
+            <a class="project__thumb project__thumb--shot" href="img/paineis/seguranca-1.webp" data-lightbox="seguranca" data-caption="Data Analytics aplicado à segurança pública · Página 1 de 2: análise por AISP">
+              <img src="img/paineis/seguranca-1.webp" width="1280" height="694" loading="lazy" alt="Painel Power BI de homicídios dolosos por AISP: quartis, mediana, IQR e limites de Tukey, distribuição por batalhão, correlação de 0,77 entre homicídios dolosos e culposos e AISPs com valores atípicos." />
+              <span class="project__cat">Dados &amp; BI</span>
+              <span class="project__pages"><i class="fa-regular fa-images"></i> 2 telas · ampliar</span>
+            </a>
+            <a hidden href="img/paineis/seguranca-2.webp" data-lightbox="seguranca" data-caption="Data Analytics aplicado à segurança pública · Página 2 de 2: análise temporal" data-alt="Painel Power BI de análise temporal: evolução anual dos homicídios dolosos no Rio de Janeiro, as cinco AISPs com maior tendência, as dez com mais homicídios e a matriz de intensidade por AISP e ano desde 2003."></a>
+            <div class="project__body">
+              <h3>Data Analytics aplicado à segurança pública</h3>
+              <p>Projeto prático de Big Data: dashboard analítico de homicídios dolosos no RJ, com grandes volumes e séries históricas tratados em Linguagem M, modelagem DAX e método de Tukey (IQR) para detectar outliers por AISP.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> Sazonalidade × desvios críticos identificados</div>
+              <div class="project__tags"><span>Power BI</span><span>Power Query (M)</span><span>DAX</span><span>Estatística</span></div>
+              <div class="project__links">
+                <a class="link" href="https://github.com/MylennaDuarte/Curso-AnalistaDeDados-BigData/tree/main/Trabalho%20final%20-%20Relat%C3%B3rio%20Data%20Analytics%20Aplicado%20%C3%A0%20Seguran%C3%A7a" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Ver relatório
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="dados">
+            <a class="project__thumb project__thumb--shot" href="img/paineis/bigdata-1.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 1 de 3: dados demográficos e interesse no Google">
+              <img src="img/paineis/bigdata-1.webp" width="1280" height="718" loading="lazy" alt="Painel Power BI de dados demográficos: canto é a categoria mais pesquisada e dança a menos pesquisada, com a evolução do interesse no Google de 2019 a 2025 e as categorias mais pesquisadas por estado." />
+              <span class="project__cat">Dados &amp; BI</span>
+              <span class="project__pages"><i class="fa-regular fa-images"></i> 3 telas · ampliar</span>
+            </a>
+            <a hidden href="img/paineis/bigdata-2.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 2 de 3: Instagram" data-alt="Painel Power BI do Instagram: engajamento por faixa etária e categoria, com pico entre 25 e 34 anos, distribuição por gênero, hashtags mais usadas e publicações por categoria."></a>
+            <a hidden href="img/paineis/bigdata-3.webp" data-lightbox="bigdata" data-caption="Big Data para marketing · Página 3 de 3: YouTube" data-alt="Painel Power BI do YouTube: dança é a categoria mais visualizada e teatro a menos, com a soma de visualizações por categoria e por ano de 2019 a 2025."></a>
+            <div class="project__body">
+              <h3>Big Data para marketing de instituições artísticas</h3>
+              <p>Projeto acadêmico: análise de gostos e interesses do público para orientar estratégias de marketing e captação de clientes, com dashboard e KPIs. O cliente confirmou que os resultados batem com a experiência de negócio dele e vai usá-los no marketing.</p>
+              <div class="project__result"><i class="fa-solid fa-star"></i> Nota 5 de 5 na avaliação do cliente</div>
+              <div class="project__tags"><span>Power BI</span><span>Power Query</span><span>Análise exploratória</span><span>KPIs</span></div>
+              <div class="project__links">
+                <a class="link" href="https://github.com/MylennaDuarte/Analise-de-Big-Data-para-Marketing-de-Instituicoes-Artisticas" target="_blank" rel="noopener">
+                  <i class="fa-brands fa-github"></i> Ver repositório
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="python">
+            <div class="project__thumb">
+              <i class="fa-solid fa-folder-tree"></i>
+              <span class="project__cat">Python</span>
+            </div>
+            <div class="project__body">
+              <h3>Automação de arquivos eSocial</h3>
+              <p>Rotina que trata, classifica e organiza XMLs de FGTS e INSS, separando por CNPJ do cliente e renomeando pelo CPF do colaborador.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> 9 h/mês economizadas · +95,10% produtividade</div>
+              <div class="project__tags"><span>Python</span><span>XML</span><span>Automação</span></div>
+            </div>
+          </article>
+
+          <article class="project reveal" data-cat="python">
+            <div class="project__thumb">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span class="project__cat">Python</span>
+            </div>
+            <div class="project__body">
+              <h3>Divisor de folha de ponto</h3>
+              <p>Separação automática de cartões de ponto em PDF e renomeação individual pelo CPF, garantindo organização e recuperação rápida dos arquivos.</p>
+              <div class="project__result"><i class="fa-solid fa-arrow-trend-up"></i> 22 h/mês economizadas · +99,63% produtividade</div>
+              <div class="project__tags"><span>Python</span><span>PDF</span><span>Automação</span></div>
+            </div>
+          </article>
+
+          <article class="project project--cta reveal" data-cat="all">
+            <div class="project__body">
+              <i class="fa-brands fa-github project__cta-icon"></i>
+              <h3>Quer ver mais?</h3>
+              <p>Acompanhe meus repositórios e experimentos no GitHub.</p>
+              <a href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener" class="btn btn--ghost">Acessar GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS ===== -->
+    <section class="section section--alt" id="depoimentos">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// depoimentos</span>
+          <h2 class="section__title">O que os <span class="grad">clientes</span> dizem</h2>
+          <p class="section__desc">Um recado direto de quem teve o problema resolvido e a avaliação formal de um cliente, por questionário.</p>
+        </div>
+
+        <div class="quotes">
+          <article class="quote reveal">
+            <div class="hex hex--sm"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="quote__text">Muito obrigado pela agilidade e prática, resolveu meu problema em 5 minutos.</p>
+            <footer class="quote__by"><strong>Alival</strong><span>Cliente</span></footer>
+          </article>
+
+          <article class="quote quote--eval reveal">
+            <div class="quote__top">
+              <div class="hex hex--sm"><i class="fa-solid fa-clipboard-check"></i></div>
+              <div class="quote__score">
+                <span class="quote__stars" aria-hidden="true"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+                <strong>Nota 5 de 5</strong>
+              </div>
+            </div>
+            <ul class="quote__answers" aria-label="Respostas do questionário">
+              <li><i class="fa-solid fa-check"></i> O projeto atendeu às expectativas da empresa</li>
+              <li><i class="fa-solid fa-check"></i> Esclareceu os interesses e tendências de potenciais clientes</li>
+              <li><i class="fa-solid fa-check"></i> As informações serão usadas para impulsionar o marketing</li>
+            </ul>
+            <p class="quote__note">
+              <span>Resumo do retorno</span>
+              O dono, especialista em teatro, disse que os dados sobre teatro batem com a experiência dele e que aprendeu
+              sobre o público de dublagem, área que não domina. Não viu nenhum problema no projeto.
+            </p>
+            <footer class="quote__by"><strong>Grupo Roger Bucley</strong><span>Projeto de Big Data para marketing</span></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__kicker">// contato</span>
+          <h2 class="section__title">Vamos criar algo <span class="grad">incrível</span>?</h2>
+          <p class="section__desc">Me conta o que você precisa resolver. Respondo rapidinho pelo WhatsApp.</p>
+        </div>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <a class="contact__item" href="https://wa.me/5521971164026" target="_blank" rel="noopener">
+              <div class="hex hex--sm"><i class="fa-brands fa-whatsapp"></i></div>
+              <div><span>WhatsApp</span><strong>(21) 97116-4026</strong></div>
+            </a>
+            <a class="contact__item" href="mailto:mysilvaduarte@gmail.com">
+              <div class="hex hex--sm"><i class="fa-solid fa-envelope"></i></div>
+              <div><span>E-mail</span><strong>mysilvaduarte@gmail.com</strong></div>
+            </a>
+            <a class="contact__item" href="https://www.linkedin.com/in/mylenna/" target="_blank" rel="noopener">
+              <div class="hex hex--sm"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div><span>LinkedIn</span><strong>linkedin.com/in/mylenna</strong></div>
+            </a>
+            <div class="contact__item">
+              <div class="hex hex--sm"><i class="fa-solid fa-location-dot"></i></div>
+              <div><span>Localização</span><strong>Rio de Janeiro, RJ — Brasil</strong></div>
+            </div>
+
+            <div class="contact__social">
+              <a href="https://www.linkedin.com/in/mylenna/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="https://github.com/MylennaDuarte/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+              <a href="mailto:mysilvaduarte@gmail.com" aria-label="E-mail"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm">
+            <div class="field">
+              <input type="text" id="nome" name="nome" placeholder=" " required />
+              <label for="nome">Seu nome</label>
+            </div>
+            <div class="field">
+              <input type="email" id="email" name="email" placeholder=" " required />
+              <label for="email">Seu e-mail</label>
+            </div>
+            <div class="field">
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder=" " required></textarea>
+              <label for="mensagem">O que você precisa resolver?</label>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <i class="fa-brands fa-whatsapp"></i> Enviar pelo WhatsApp
+            </button>
+            <p class="contact__note">A mensagem abre direto no WhatsApp, já preenchida.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__signature">Mylenna</span><span class="logo__heart">♡</span>
+        <small>Soluções Tecnológicas</small>
+      </div>
+      <p class="footer__copy">© <span id="year"></span> Mylenna Duarte. Feito com 💗 e muito código.</p>
+      <a href="#inicio" class="footer__top" aria-label="Voltar ao topo"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+  </footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+    <figure class="lightbox__fig">
+      <figcaption><span id="lbCap"></span><span class="lightbox__count" id="lbCount"></span></figcaption>
+    </figure>
+    <button type="button" class="lightbox__btn lightbox__close" aria-label="Fechar"><i class="fa-solid fa-xmark"></i></button>
+    <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--prev" aria-label="Imagem anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button type="button" class="lightbox__btn lightbox__nav lightbox__nav--next" aria-label="Próxima imagem"><i class="fa-solid fa-chevron-right"></i></button>
+  </dialog>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
