@@ -179,7 +179,8 @@ body::before {
   transition: var(--transition);
 }
 .theme-toggle:hover { border-color: var(--pink); box-shadow: 0 0 20px -4px var(--glow); transform: rotate(20deg); }
-.menu-toggle { display: none; flex-direction: column; gap: 5px; }
+/* Os três traços (e o X) ficam no centro do círculo, não no canto */
+.menu-toggle { display: none; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
 .menu-toggle span { width: 20px; height: 2px; background: var(--pink-2); border-radius: 2px; transition: var(--transition); }
 .menu-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .menu-toggle.open span:nth-child(2) { opacity: 0; }
@@ -590,18 +591,38 @@ html:has(.lightbox[open]) { overflow: hidden; }
   .skills-grid { grid-template-columns: 1fr; }
 
   .menu-toggle { display: flex; }
+
+  /* Menu do celular: painel que desliza da direita; o resto da tela escurece e deixa de rolar */
+  .navbar::after {
+    content: ""; position: fixed; inset: 0; z-index: -2;
+    background: rgba(42, 13, 31, 0.6); opacity: 0; pointer-events: none;
+    transition: opacity 0.4s;
+  }
+  .navbar.menu-open::after { opacity: 1; pointer-events: auto; }
+  .navbar.menu-open { touch-action: none; }
+  html.menu-open { overflow: hidden; }
   .nav {
-    position: fixed; top: 0; right: 0; height: 100vh; width: min(320px, 85vw);
-    flex-direction: column; padding: 6rem 2rem 2rem; gap: 0.4rem;
-    background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(18px);
-    border-left: 1px solid var(--border); transform: translateX(100%); visibility: hidden;
+    position: fixed; top: 0; right: 0; height: 100vh; height: 100dvh; width: min(320px, 85vw);
+    flex-direction: column; gap: 0.3rem; padding: calc(var(--nav-h) + 1rem) 1.25rem 2rem;
+    overflow-y: auto; overscroll-behavior: contain;
+    background: color-mix(in srgb, var(--bg) 94%, transparent); backdrop-filter: blur(18px);
+    border-left: 1px solid var(--border); box-shadow: var(--shadow);
+    transform: translateX(100%); visibility: hidden;
     transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s 0.4s;
     z-index: -1;
   }
   .nav.open { transform: translateX(0); visibility: visible; transition-delay: 0s; }
+  .nav__link { font-size: 1.05rem; padding: 0.85rem 1rem 0.85rem 1.25rem; border-radius: var(--radius-sm); }
+  /* No painel, a seção atual ganha uma barra à esquerda do nome, no lugar do traço centralizado da barra de computador */
+  .nav__link::after {
+    left: 0; top: 50%; bottom: auto; width: 3px; height: 55%;
+    transform: translateY(-50%) scaleY(0); transition: transform 0.3s;
+  }
+  .nav__link:hover::after, .nav__link.active::after { width: 3px; transform: translateY(-50%) scaleY(1); }
+  .nav__link.active { background: color-mix(in srgb, var(--pink) 10%, transparent); }
+
   .hero__grid > * { min-width: 0; }
   .hero__title-big { font-size: clamp(2.1rem, 9.5vw, 4.8rem); }
-  .nav__link { font-size: 1.05rem; padding: 0.8rem 1rem; }
 }
 
 @media (max-width: 600px) {

@@ -34,15 +34,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const links = $$(".nav__link");
   const progress = $(".scroll-progress");
 
-  menuToggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
+  const setMenu = (open) => {
+    nav.classList.toggle("open", open);
+    navbar.classList.toggle("menu-open", open);
+    root.classList.toggle("menu-open", open); // trava a rolagem da página enquanto o painel está aberto
     menuToggle.classList.toggle("open", open);
     menuToggle.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+    menuToggle.setAttribute("aria-expanded", String(open));
+  };
+  const menuOpen = () => nav.classList.contains("open");
+  menuToggle.addEventListener("click", () => setMenu(!menuOpen()));
+  links.forEach((l) => l.addEventListener("click", () => setMenu(false)));
+  // Fecha ao tocar fora do painel (o fundo escurecido), ao apertar Esc e quando a tela cresce e o menu vira barra
+  document.addEventListener("click", (e) => {
+    if (menuOpen() && !nav.contains(e.target) && !e.target.closest(".navbar__actions")) setMenu(false);
   });
-  links.forEach((l) => l.addEventListener("click", () => {
-    nav.classList.remove("open");
-    menuToggle.classList.remove("open");
-  }));
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && menuOpen()) { setMenu(false); menuToggle.focus(); }
+  });
+  window.matchMedia("(max-width: 900px)").addEventListener("change", (e) => { if (!e.matches) setMenu(false); });
 
   const sections = $$("main section[id]");
   const onScroll = () => {
